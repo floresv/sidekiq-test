@@ -16,6 +16,12 @@ class ApplicationController < ActionController::API
   end
 
   def index
+    queues = [:low, :critical, :default, :high]
+    50.times do |i|
+      queues.each do |level|
+        PriorityTest.sidekiq_delay(queue: level).log("#{i}: #{level}")
+      end
+    end
     render json: { message: 'Welcome to Rails Bootstrap' }
   end
 end

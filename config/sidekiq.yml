@@ -1,3 +1,14 @@
 :queues:
-  - default
+  - critical
+  - high
+  - low
 
+# :queues:
+#   - ["critical", 1]
+#   - ["high", 1]
+#   - ["low", 1]
+
+# :queues:
+#   - ["critical", 4]
+#   - ["high", 2]
+#   - ["low", 1]
