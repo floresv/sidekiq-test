@@ -29,7 +29,7 @@ gem 'sidekiq_mailer'
 
 # gem 'recipient_interceptor'
 # # CORS support
-# gem 'rack-cors', '~> 1.0.2', require: 'rack/cors'
+gem 'rack-cors', '~> 1.0.2', require: 'rack/cors'
 
 # # Use for DoS attacks
 # gem 'rack-attack'
