@@ -17,7 +17,7 @@ gem 'puma', '~> 3.12'
 gem 'active_model_serializers', '~> 0.10'
 
 # Sidekiq
-gem 'sidekiq', '~> 5.2'
+gem 'sidekiq', '~> 6.4'
 gem 'sidekiq-failures'
 gem 'sidekiq_mailer'
 
